@@ -1,0 +1,6 @@
+scenario,labels_changed,pct
+air T +0 C,21,1.0
+air T +1 C (baseline),0,0.0
+air T +3 C,39,1.8
+fixed 20 C,139,6.5
+fixed 30 C,42,2.0

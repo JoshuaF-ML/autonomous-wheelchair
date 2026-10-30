@@ -26,7 +26,7 @@ def parse_concentration(value, bdl_fraction=0.5):
     if _BDL.match(s):
         return 0.0
     try:
-        return float(s.replace(",", ""))
+        return float(re.sub(r"\.{2,}", ".", s.replace(",", "")))
     except ValueError:
         return np.nan
 
