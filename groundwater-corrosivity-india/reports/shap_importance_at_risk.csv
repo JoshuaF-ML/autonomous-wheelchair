@@ -1,0 +1,7 @@
+,mean_abs_shap
+EC,0.1962
+pH,0.0598
+Latitude,0.0364
+Longitude,0.0341
+SeasonPre,0.0204
+T_air_C,0.02

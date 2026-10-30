@@ -2,7 +2,7 @@
 
 Nothing here is committed except this file. Put downloads in `raw/` untouched.
 
-## Phase 0 - what to download (not yet done)
+## What was used
 
 | Data | Where | Notes |
 |---|---|---|

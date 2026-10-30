@@ -8,25 +8,34 @@ for rural water supply.
 
 ## Status
 
-| Phase | State |
+Scope is now a **Telangana case study** (2018-2020, pre/post-monsoon), because it was the only full-chemistry
+data reachable; see `RESULTS.md` for data sources, findings, ML results and limitations.
+
+| Part | State |
 |---|---|
-| Scaffold, `src/indices.py`, `src/cleaning.py`, tests | done (22 tests pass) |
-| 0. Data acquisition and column check | **blocked in the dev sandbox** (see below); run where data.gov.in is reachable |
-| 1. Cleaning and QC on real data | not started |
-| 2-6. Features, EDA/maps, ML, validation, Streamlit app, report | not started |
+| Indices, QC, label, 50 unit tests | done |
+| Data loading, NASA POWER temperature, pipeline | done |
+| Tables, figures (district bars, well maps, LSI vs LS, confusion matrix, SHAP) | done |
+| ML with four validation designs | done (modest accuracy, see RESULTS.md) |
+| Streamlit app (`app/streamlit_app.py`), model in `models/` | done, checked headlessly with Streamlit's test harness |
+| Notebooks | not made; the pipeline is scripts in `src/` |
+| All-India extension | not done (national portals unreachable from the build environment) |
 
-The labels are computed from water chemistry, not measured pipe corrosion. State this
-as a limitation in the report.
+The labels are computed from water chemistry, not measured pipe corrosion. State this as a limitation.
 
-## Run the tests
+## Reproduce
 
-    pip install pandas numpy pytest
+    pip install -r requirements.txt
+    # put the Telangana files in data/raw/telangana/ (sources in RESULTS.md), then:
+    python -m src.pipeline && python -m src.analysis && python -m src.modeling && python -m src.train_final
+    streamlit run app/streamlit_app.py
     python -m pytest
 
 ## Layout
 
     src/indices.py    LSI, RSI, Larson-Skold, charge balance, risk_class
     src/cleaning.py   BDL parsing, QC filters with a per-rule removal report
+    src/data_loading.py, climate.py, pipeline.py, analysis.py, modeling.py, train_final.py
     tests/            index checks (hand-worked example), parsing, QC
     data/             raw -> interim -> processed (git-ignored, see data/README.md)
     notebooks/        01 acquisition, 02 cleaning, 03 labels, 04 EDA/maps, 05 modelling, 06 interpretation
