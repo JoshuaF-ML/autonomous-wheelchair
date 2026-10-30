@@ -1,0 +1,14 @@
+pandas>=2.2
+numpy>=1.26
+pytest>=8
+# added as the phases that need them are built
+geopandas
+folium
+scikit-learn
+xgboost
+imbalanced-learn
+shap
+pykrige
+rapidfuzz
+streamlit
+requests

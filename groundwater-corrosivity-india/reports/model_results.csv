@@ -1,0 +1,45 @@
+features,validation,model,macro_F1,balanced_acc,recall_at_risk,accuracy,n_test
+A0 pH+EC,random (leaky),Majority class,0.201,0.333,1.0,0.431,2140
+A0 pH+EC,random (leaky),Logistic regression,0.566,0.581,0.596,0.577,2140
+A0 pH+EC,random (leaky),Random forest,0.598,0.605,0.667,0.613,2140
+A0 pH+EC,random (leaky),Hist. gradient boosting,0.605,0.621,0.673,0.617,2140
+A0 pH+EC,unseen wells,Majority class,0.201,0.333,1.0,0.431,2140
+A0 pH+EC,unseen wells,Logistic regression,0.567,0.582,0.596,0.577,2140
+A0 pH+EC,unseen wells,Random forest,0.595,0.602,0.684,0.611,2140
+A0 pH+EC,unseen wells,Hist. gradient boosting,0.602,0.619,0.668,0.614,2140
+A0 pH+EC,unseen districts,Majority class,0.201,0.333,1.0,0.431,2140
+A0 pH+EC,unseen districts,Logistic regression,0.559,0.572,0.598,0.57,2140
+A0 pH+EC,unseen districts,Random forest,0.573,0.579,0.66,0.589,2140
+A0 pH+EC,unseen districts,Hist. gradient boosting,0.585,0.602,0.649,0.597,2140
+A0 pH+EC,"train 2018-19, test 2020",Majority class,0.184,0.333,1.0,0.382,699
+A0 pH+EC,"train 2018-19, test 2020",Logistic regression,0.574,0.574,0.652,0.585,699
+A0 pH+EC,"train 2018-19, test 2020",Random forest,0.58,0.582,0.682,0.589,699
+A0 pH+EC,"train 2018-19, test 2020",Hist. gradient boosting,0.599,0.606,0.689,0.607,699
+A  pH+EC+location+season+climate,random (leaky),Majority class,0.201,0.333,1.0,0.431,2140
+A  pH+EC+location+season+climate,random (leaky),Logistic regression,0.577,0.588,0.609,0.587,2140
+A  pH+EC+location+season+climate,random (leaky),Random forest,0.648,0.65,0.751,0.663,2140
+A  pH+EC+location+season+climate,random (leaky),Hist. gradient boosting,0.641,0.652,0.718,0.653,2140
+A  pH+EC+location+season+climate,unseen wells,Majority class,0.201,0.333,1.0,0.431,2140
+A  pH+EC+location+season+climate,unseen wells,Logistic regression,0.578,0.591,0.603,0.588,2140
+A  pH+EC+location+season+climate,unseen wells,Random forest,0.641,0.643,0.723,0.653,2140
+A  pH+EC+location+season+climate,unseen wells,Hist. gradient boosting,0.637,0.649,0.701,0.646,2140
+A  pH+EC+location+season+climate,unseen districts,Majority class,0.201,0.333,1.0,0.431,2140
+A  pH+EC+location+season+climate,unseen districts,Logistic regression,0.568,0.578,0.608,0.58,2140
+A  pH+EC+location+season+climate,unseen districts,Random forest,0.61,0.616,0.699,0.625,2140
+A  pH+EC+location+season+climate,unseen districts,Hist. gradient boosting,0.6,0.608,0.673,0.614,2140
+A  pH+EC+location+season+climate,"train 2018-19, test 2020",Majority class,0.184,0.333,1.0,0.382,699
+A  pH+EC+location+season+climate,"train 2018-19, test 2020",Logistic regression,0.572,0.573,0.637,0.582,699
+A  pH+EC+location+season+climate,"train 2018-19, test 2020",Random forest,0.624,0.622,0.779,0.638,699
+A  pH+EC+location+season+climate,"train 2018-19, test 2020",Hist. gradient boosting,0.633,0.634,0.753,0.638,699
+B  location+season+climate only,random (leaky),Majority class,0.201,0.333,1.0,0.431,2140
+B  location+season+climate only,random (leaky),Random forest,0.513,0.519,0.627,0.53,2140
+B  location+season+climate only,random (leaky),Hist. gradient boosting,0.509,0.517,0.596,0.522,2140
+B  location+season+climate only,unseen wells,Majority class,0.201,0.333,1.0,0.431,2140
+B  location+season+climate only,unseen wells,Random forest,0.419,0.42,0.505,0.438,2140
+B  location+season+climate only,unseen wells,Hist. gradient boosting,0.408,0.414,0.431,0.417,2140
+B  location+season+climate only,unseen districts,Majority class,0.201,0.333,1.0,0.431,2140
+B  location+season+climate only,unseen districts,Random forest,0.361,0.365,0.497,0.407,2140
+B  location+season+climate only,unseen districts,Hist. gradient boosting,0.387,0.388,0.458,0.41,2140
+B  location+season+climate only,"train 2018-19, test 2020",Majority class,0.184,0.333,1.0,0.382,699
+B  location+season+climate only,"train 2018-19, test 2020",Random forest,0.489,0.492,0.618,0.496,699
+B  location+season+climate only,"train 2018-19, test 2020",Hist. gradient boosting,0.48,0.485,0.603,0.486,699
